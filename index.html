@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarana - Web Player: Play. Pause. Repeat.</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left bg-black">
+            <div class="close">
+                <img  width="30px" class="invert" src="img/close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo">
+                    <img src="img/logo.svg" width="100" class="invert" alt="logo">
+                </div>
+                <ul>
+                    <li><img class="invert" src="img/home.svg" alt="home">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="search">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading flex">
+                    <img class="invert" src="img/playlist.svg" alt="playlist">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                       
+                    </ul>
+                </div>
+
+                <div class="footer flex">
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/">
+                            <span>Legal</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/safetyandprivacy/">
+                            <span>Safety & Privacy Center</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/">
+                            <span>Privacy Policy</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/cookies-policy/">
+                            <span>Cookies</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">
+                            <span>About Ads</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/in-en/accessibility/">
+                            <span>Accessibility</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav p-1">
+                    <div class="hamburgerContainer">
+                        <img width="35px" class="invert hamburger" src="img/hamburger.svg" alt="">
+                    <img class="invert" src="img/left_arrow.svg" alt="left_arrow">
+                    <img class="invert" src="img/right_arrow.svg" alt="right_arrow">
+                    </div>
+                </div>
+                <div class="buttons p-1">
+                    <button class="signup" type="button">Sign Up</button>
+                    <button class="login" type="button">Login</button>
+                </div>
+            </div>
+
+            <main>
+                <div class="popularArtists">
+                    <h2>Popular Artists</h2>
+                    <div class="card-Container">
+                        <div data-folder="Pritam" class="popular-card">
+                            <div class="popular-play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 73.82A182.18 182.18 0 1 0 438.18 256 182.182 182.182 0 0 0 256 73.82zm67.825 192.217L218.7 326.734a10.376 10.376 0 0 1-15.566-8.99V196.356a10.38 10.38 0 0 1 15.575-8.99l105.125 60.696a10.376 10.376 0 0 1-.009 17.974z" />
+                                </svg>                      
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca" alt="Pritam">
+                            <h3>Pritam</h3>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="ArijitSingh" class="popular-card">
+                            <div class="popular-play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 73.82A182.18 182.18 0 1 0 438.18 256 182.182 182.182 0 0 0 256 73.82zm67.825 192.217L218.7 326.734a10.376 10.376 0 0 1-15.566-8.99V196.356a10.38 10.38 0 0 1 15.575-8.99l105.125 60.696a10.376 10.376 0 0 1-.009 17.974z" />
+                                </svg>                      
+                            </div>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjCWYiSicBel-pkJkSKZMj6F4bC3tucMCWrg&s" alt="Arijit">
+                            <h3>Arijit Singh</h3>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="ARRahman" class="popular-card">
+                            <div class="popular-play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 73.82A182.18 182.18 0 1 0 438.18 256 182.182 182.182 0 0 0 256 73.82zm67.825 192.217L218.7 326.734a10.376 10.376 0 0 1-15.566-8.99V196.356a10.38 10.38 0 0 1 15.575-8.99l105.125 60.696a10.376 10.376 0 0 1-.009 17.974z" />
+                                </svg>                      
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c" alt="AR Rahman">
+                            <h3>AR Rahman</h3>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="AtifAslam" class="popular-card">
+                            <div class="popular-play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 73.82A182.18 182.18 0 1 0 438.18 256 182.182 182.182 0 0 0 256 73.82zm67.825 192.217L218.7 326.734a10.376 10.376 0 0 1-15.566-8.99V196.356a10.38 10.38 0 0 1 15.575-8.99l105.125 60.696a10.376 10.376 0 0 1-.009 17.974z" />
+                                </svg>                      
+                            </div>
+                            <img src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84" alt="Atif Aslam">
+                            <h3>Atif Aslam</h3>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="KK" class="popular-card">
+                            <div class="popular-play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 73.82A182.18 182.18 0 1 0 438.18 256 182.182 182.182 0 0 0 256 73.82zm67.825 192.217L218.7 326.734a10.376 10.376 0 0 1-15.566-8.99V196.356a10.38 10.38 0 0 1 15.575-8.99l105.125 60.696a10.376 10.376 0 0 1-.009 17.974z" />
+                                </svg>                      
+                            </div>
+                            <img src="	https://i.scdn.co/image/ab67616100005174b09a31f853166e721d4d46b2" alt="KK">
+                            <h3>KK</h3>
+                            <p>Artist</p>
+                        </div>
+                        <div data-folder="ShreyaGoshal" class="popular-card">
+                            <div class="popular-play">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 73.82A182.18 182.18 0 1 0 438.18 256 182.182 182.182 0 0 0 256 73.82zm67.825 192.217L218.7 326.734a10.376 10.376 0 0 1-15.566-8.99V196.356a10.38 10.38 0 0 1 15.575-8.99l105.125 60.696a10.376 10.376 0 0 1-.009 17.974z" />
+                                </svg>                      
+                            </div>
+                            <img src="https://qph.cf2.quoracdn.net/main-qimg-1d23516744de5662959e5c8234ff6e22.webp" alt="Shreya Goshal">
+                            <h3>Shreya Goshal</h3>
+                            <p>Artist</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="taranaPlaylists">
+                    <h2>Tarana Playlist</h2>
+                    <div class="cardContainer">
+                        
+                    </div>
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle">
+    
+                            </div>
+                        </div>
+                        <div class="abovebar">
+    
+    
+                            <div class="songinfo">
+    
+                            </div>
+                            <div class="songbuttons">
+                                <img width="35" id="previous" src="img/prevsong.svg" alt="">
+                                <img width="35" id="play" src="img/play.svg" alt="">
+                                <img width="35" id="next" src="img/nextsong.svg" alt="">
+                            </div>
+                            <div class="timevol">
+    
+                           
+                            <div class="songtime">
+    
+                            </div>
+                            <div class="volume">
+                                <img width="30" src="img/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="">
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
