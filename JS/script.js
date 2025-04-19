@@ -37,14 +37,14 @@ async function getSongs(folder) {
     songUL.innerHTML = ""
     for (const song of songs) {
         songUL.innerHTML += `<li> 
-            <img class="invert" width="34" src="img/music.svg" alt="">
+            <img class="invert" width="34" src="https://tarana-music.s3.us-east-1.amazonaws.com/music.svg" alt="">
             <div class="info">
                 <div>${song.replaceAll("%20", " ")}</div>
                 <div>Danish Shaikh</div>
             </div>
             <div class="playnow">
                 <span>Play Now</span>
-                <img class="invert" src="img/play.svg" alt="">
+                <img class="invert" src="https://tarana-music.s3.us-east-1.amazonaws.com/play.svg" alt="">
             </div>
         </li>`;
     }
@@ -64,7 +64,7 @@ const playMusic = (track, pause = false) => {
     currentSong.src = `/${currFolder}/` + track;
     if (!pause) {
         currentSong.play();
-        play.src = "img/pause.svg";
+        play.src = "https://tarana-music.s3.us-east-1.amazonaws.com/pause.svg";
     }
     document.querySelector(".songinfo").innerHTML = decodeURI(track)
     document.querySelector(".songtime").innerHTML = "00:00 / 00:00"
@@ -159,10 +159,10 @@ async function main() {
     play.addEventListener("click", () => {
         if (currentSong.paused) {
             currentSong.play();
-            play.src = "img/pause.svg";
+            play.src = "https://tarana-music.s3.us-east-1.amazonaws.com/pause.svg";
         } else {
             currentSong.pause();
-            play.src = "img/play.svg";
+            play.src = "https://tarana-music.s3.us-east-1.amazonaws.com/play.svg";
         }
     });
 
